@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+    <script src="/cdn-cgi/apps/head/oEIyjeQOhyHwY52800PDlhjYP_M.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <style>
+        * {
+            font-family: monospace;
+            color: white;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: black;
+        }
+        #overlay {
+            position: fixed;
+            top: 98%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: block;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+        }
+        a {
+            text-decoration: none;
+        }
+    </style>
+    <title>s3cd3t</title>
+    <link rel="shortcut icon" href="photo/ava1337.png" type="png">
+</head>
+<body>
+    <div id="overlay">
+        <div id="rules" align="center">
+            <a href="index.html">
+                1. No system is safe!<br>
+                2. Aim for the impossible!<br>
+                3. Have fun both online and in real life!<br>
+            </a>
+            <br>
+            About me
+        </div>
+        <script>
+            function printText(el) {
+                let letterTimeout = 20
+                let text = el.innerHTML
+                let i = 1
+                let print__fn = function () {
+                    if (i <= text.length) {
+                        el.innerHTML = text.substr(0, i);
+                        setTimeout(arguments.callee, letterTimeout);
+                    }
+                    i++;
+                }
+                print__fn()
+            };
+            printText(document.getElementById('rules'));
+        </script>
+    </div>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script>
+        $("#content").css("display", "none");
+        $("#content").fadeIn(2000);
+    </script>
+</body>
+</html>
